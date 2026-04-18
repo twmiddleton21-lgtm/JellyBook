@@ -3,24 +3,34 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!-- ✅ Mobile viewport (fixed + safe area support) -->
+    <!-- ✅ Mobile viewport (safe area + no zoom issues) -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
 
-    <!-- ✅ PWA / iOS app-like behavior -->
+    <!-- ✅ PWA / iOS full screen -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="JellyBook" />
 
-    <!-- ✅ Theme color (matches your dark UI) -->
+    <!-- ✅ Theme color -->
     <meta name="theme-color" content="#020617" />
 
-    <!-- ✅ Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/JellyBook/favicon.svg" />
+    <!-- ✅ ICONS (use your jellyfish logo) -->
+    <link rel="icon" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
 
-    <title>audiobook-app</title>
-    <script type="module" crossorigin src="/JellyBook/assets/index-DRDC9tXZ.js"></script>
+    <!-- Optional sizes (recommended if you export multiple sizes later) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/logo.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png" />
+
+    <title>JellyBook</title>
+    <script type="module" crossorigin src="/JellyBook/assets/index-FRjDZp93.js"></script>
     <link rel="stylesheet" crossorigin href="/JellyBook/assets/index-CfAHJjLs.css">
   </head>
 
