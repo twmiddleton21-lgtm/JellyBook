@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!-- ✅ Mobile viewport (safe area + no zoom issues) -->
+    <!-- 🔥 CRITICAL: full edge-to-edge support -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
 
-    <!-- ✅ PWA / iOS full screen -->
+    <!-- 🔥 PWA / iOS fullscreen -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -17,17 +17,30 @@
     />
     <meta name="apple-mobile-web-app-title" content="JellyBook" />
 
-    <!-- ✅ Theme color -->
+    <!-- 🔥 Prevent iOS UI color flashes -->
     <meta name="theme-color" content="#020617" />
+    <meta name="background-color" content="#020617" />
 
-    <!-- ✅ ICONS (use your jellyfish logo) -->
+    <!-- 🔥 Android Chrome fullscreen -->
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- 🔥 Icons -->
     <link rel="icon" href="/JellyBook/logo.png" />
     <link rel="apple-touch-icon" href="/JellyBook/logo.png" />
 
-    <!-- Optional sizes (recommended if you export multiple sizes later) -->
+    <!-- Recommended sizes -->
     <link rel="apple-touch-icon" sizes="180x180" href="/JellyBook/logo.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/JellyBook/logo.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/JellyBook/logo.png" />
+
+    <!-- 🔥 OPTIONAL BUT IMPORTANT: splash background fix -->
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #020617;
+      }
+    </style>
 
     <title>JellyBook</title>
     <script type="module" crossorigin src="/JellyBook/assets/index-Bwj_toL2.js"></script>
